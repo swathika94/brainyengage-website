@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions and Privacy Policy — Brainy Engage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --orange: #F97316;
+      --orange-light: #FFF7ED;
+      --orange-border: #FFD4A8;
+      --orange-dark: #C2440A;
+      --dark: #1a1a1a;
+      --grey: #6b7280;
+      --grey-light: #f5f5f5;
+      --white: #ffffff;
+      --max-width: 780px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fafafa;
+      color: var(--dark);
+      line-height: 1.75;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--orange);
+      padding: 48px 24px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 50%;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -40px;
+      width: 260px; height: 260px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 50%;
+    }
+    .header-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .brain-icon {
+      width: 48px; height: 48px;
+      background: white;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px;
+    }
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: white;
+      letter-spacing: -0.5px;
+    }
+    .header .subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.88);
+      font-weight: 600;
+      margin-top: 6px;
+    }
+    .header .dates {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* ── NOTICE BOX ── */
+    .notice {
+      background: var(--orange-light);
+      border: 1.5px solid var(--orange-border);
+      border-left: 4px solid var(--orange);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 40px;
+    }
+    .notice strong {
+      display: block;
+      color: var(--orange-dark);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .notice p {
+      font-size: 0.92rem;
+      color: var(--orange-dark);
+      line-height: 1.6;
+    }
+
+    /* ── TABLE OF CONTENTS ── */
+    .toc {
+      background: var(--white);
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+    .toc h3 {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-bottom: 14px;
+    }
+    .toc-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 32px;
+    }
+    .toc a {
+      font-size: 0.88rem;
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: 600;
+      display: block;
+      padding: 3px 0;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── SECTION TITLES ── */
+    .section-title {
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--orange);
+      border-bottom: 2px solid var(--orange);
+      padding-bottom: 10px;
+      margin: 56px 0 28px;
+    }
+    .section-title:first-of-type { margin-top: 0; }
+
+    h2.heading {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin: 28px 0 10px;
+      scroll-margin-top: 24px;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.8;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin: 10px 0 16px;
+    }
+    li { margin-bottom: 6px; }
+
+    /* ── HIGHLIGHT BOX ── */
+    .highlight {
+      background: var(--grey-light);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.92rem;
+      color: var(--dark);
+      font-family: 'Lora', serif;
+      font-style: italic;
+      border-left: 3px solid var(--orange);
+    }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--orange);
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-top: 48px;
+      text-align: center;
+    }
+    .contact-box h3 {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .contact-box p { color: rgba(255,255,255,0.9); font-size: 0.95rem; }
+    .contact-box a {
+      color: white;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.82rem;
+      color: var(--grey);
+      border-top: 1px solid #e5e7eb;
+      background: white;
+    }
+    footer a { color: var(--orange); text-decoration: none; font-weight: 600; }
+
+    @media (max-width: 560px) {
+      .toc-cols { grid-template-columns: 1fr; }
+      .header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-logo">
+    <div class="brain-icon">🧠</div>
+    <span style="font-size:1.6rem;font-weight:900;color:white;">Brainy Engage</span>
+  </div>
+  <div class="subtitle">Terms &amp; Conditions and Privacy Policy</div>
+  <div class="dates">Effective Date: June 14, 2026 &nbsp;·&nbsp; Last Updated: June 14, 2026</div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+  <!-- NOTICE -->
+  <div class="notice">
+    <strong>⚠ Notice: Early Access Product</strong>
+    <p>Brainy Engage is currently in early access.</p>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <div class="toc-cols">
+      <div>
+        <a href="#acceptance">1. Acceptance of Terms</a>
+        <a href="#eligibility">2. Eligibility</a>
+        <a href="#accounts">3. User Accounts</a>
+        <a href="#instructors">4. Class Instructors</a>
+        <a href="#students">5. Students &amp; Parents</a>
+        <a href="#prohibited">6. Prohibited Conduct</a>
+        <a href="#ip">7. Intellectual Property</a>
+        <a href="#liability">8. Limitation of Liability</a>
+        <a href="#termination">9. Termination</a>
+        <a href="#changes-terms">10. Changes to Terms</a>
+        <a href="#governing">11. Governing Law</a>
+      </div>
+      <div>
+        <a href="#privacy-intro">12. Privacy Policy Intro</a>
+        <a href="#data-collect">13. Data We Collect</a>
+        <a href="#data-use">14. How We Use Data</a>
+        <a href="#data-share">15. Data Sharing</a>
+        <a href="#data-retain">16. Data Retention</a>
+        <a href="#your-rights">17. Your Rights</a>
+        <a href="#children">18. Children's Privacy</a>
+        <a href="#security">19. Security</a>
+        <a href="#changes-privacy">20. Changes to Policy</a>
+        <a href="#contact">21. Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ TERMS & CONDITIONS ══════════════════════════════ -->
+  <div class="section-title">Terms and Conditions</div>
+
+  <h2 class="heading" id="acceptance">1. Acceptance of Terms</h2>
+  <p>By downloading, accessing, or using the Brainy Engage app (the "App"), you ("User") agree to be bound by these Terms and Conditions ("Terms"). The term "User" applies to all account types: Class Instructors who create and list classes, and Students or Parents/Guardians who browse and book classes.</p>
+  <p>If you do not agree to these Terms, do not use the App.</p>
+
+  <h2 class="heading" id="eligibility">2. Eligibility</h2>
+  <ul>
+    <li>You must be at least 18 years of age to create and maintain an account on the App.</li>
+    <li>By using the App, you represent and warrant that you meet this age requirement.</li>
+    <li>Brainy Engage reserves the right to verify eligibility and suspend or terminate accounts that do not comply.</li>
+  </ul>
+
+  <h2 class="heading" id="accounts">3. User Accounts</h2>
+  <ul>
+    <li>You are responsible for maintaining the confidentiality of your login credentials.</li>
+    <li>You must provide accurate and complete information when registering.</li>
+    <li>You are responsible for all activity that occurs under your account.</li>
+    <li>Notify us immediately at <a href="mailto:hello@brainyengage.com">hello@brainyengage.com</a> if you suspect unauthorised access.</li>
+    <li>We reserve the right to suspend or terminate accounts that violate these Terms.</li>
+  </ul>
+
+  <h2 class="heading" id="instructors">4. Class Instructors</h2>
+  <ul>
+    <li>Instructors may list classes, set schedules, and communicate with enrolled students through the App.</li>
+    <li>Instructors are solely responsible for the accuracy, quality, and legality of the content and classes they provide.</li>
+    <li>Instructors must not misrepresent their qualifications, credentials, or class content.</li>
+    <li>Instructors agree not to contact students or parents/guardians outside the App for commercial purposes related to the classes.</li>
+    <li>Brainy Engage reserves the right to remove any class listing that violates these Terms or our community standards.</li>
+  </ul>
+
+  <h2 class="heading" id="students">5. Students and Parents/Guardians</h2>
+  <ul>
+    <li>Students and Parents/Guardians may browse, book, and attend classes listed on the App.</li>
+    <li>Bookings are subject to availability and instructor approval where applicable.</li>
+    <li>Cancellation and refund terms will be set out separately per class listing. In the absence of specific terms, no refunds are guaranteed during early access.</li>
+    <li>Parents/Guardians are responsible for ensuring their child's appropriate use of the App.</li>
+  </ul>
+
+  <h2 class="heading" id="prohibited">6. Prohibited Conduct</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Use the App for any unlawful purpose or in violation of any applicable laws.</li>
+    <li>Post or transmit content that is harmful, offensive, defamatory, or inappropriate.</li>
+    <li>Attempt to gain unauthorised access to any part of the App or its systems.</li>
+    <li>Use automated tools, bots, or scrapers to access or extract data from the App.</li>
+    <li>Impersonate any person or entity.</li>
+    <li>Harass, intimidate, or harm other users.</li>
+    <li>Use the App to collect personal data of other users without their consent.</li>
+  </ul>
+
+  <h2 class="heading" id="ip">7. Intellectual Property</h2>
+  <p>All content, trademarks, logos, and software within the App are the property of Brainy Engage or its licensors. You may not reproduce, distribute, modify, or create derivative works without express written permission.</p>
+  <p>By submitting content (such as class descriptions or profile information) to the App, you grant Brainy Engage a non-exclusive, royalty-free licence to use, display, and distribute that content within the App.</p>
+
+  <h2 class="heading" id="liability">8. Limitation of Liability</h2>
+  <div class="highlight">
+    To the maximum extent permitted by law, Brainy Engage is not liable for any indirect, incidental, special, or consequential damages arising out of your use of, or inability to use, the App. The App is provided "as is" during early access, without warranties of any kind.
+  </div>
+  <p>Brainy Engage does not endorse or verify the qualifications of any instructor listed on the platform. Users engage with instructors at their own discretion.</p>
+
+  <h2 class="heading" id="termination">9. Termination</h2>
+  <p>We reserve the right to suspend or terminate your account at any time, with or without notice, if we believe you have violated these Terms. You may delete your account at any time through the App settings. Upon termination, your right to use the App ceases immediately.</p>
+
+  <h2 class="heading" id="changes-terms">10. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. We will notify all users of material changes at least 14 days in advance via the App or email. Continued use of the App after changes take effect constitutes your acceptance of the revised Terms.</p>
+
+  <h2 class="heading" id="governing">11. Governing Law</h2>
+  <p>These Terms are governed by the laws of the State of Georgia, United States. Any disputes shall be resolved in the courts of Georgia, unless otherwise required by applicable consumer protection laws.</p>
+
+  <!-- ══════════════════════════════ PRIVACY POLICY ══════════════════════════════ -->
+  <div class="section-title">Privacy Policy</div>
+
+  <h2 class="heading" id="privacy-intro">12. Introduction</h2>
+  <p>Brainy Engage ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your personal information when you use the Brainy Engage app.</p>
+  <p>By using the App, you consent to the data practices described in this policy.</p>
+
+  <h2 class="heading" id="data-collect">13. Data We Collect</h2>
+  <p>We collect the following categories of personal data:</p>
+  <ul>
+    <li><strong>Account information:</strong> Name, email address, account type (Instructor / Student / Parent), and password (encrypted).</li>
+    <li><strong>Profile information:</strong> Profile photo, bio, and instructor qualifications where provided.</li>
+    <li><strong>Usage data:</strong> Pages visited, features used, session duration, and interaction patterns within the App.</li>
+    <li><strong>Device information:</strong> Device type, operating system, and app version.</li>
+    <li><strong>Communications:</strong> Messages sent between users through the in-app messaging system.</li>
+    <li><strong>Booking data:</strong> Class bookings, cancellations, and attendance records.</li>
+  </ul>
+
+  <h2 class="heading" id="data-use">14. How We Use Your Data</h2>
+  <p>We use your data to:</p>
+  <ul>
+    <li>Create and manage your account.</li>
+    <li>Facilitate class bookings and scheduling.</li>
+    <li>Enable communication between instructors and students/parents.</li>
+    <li>Improve and personalise your experience in the App.</li>
+    <li>Send important service notifications (e.g. booking confirmations, policy updates).</li>
+    <li>Ensure the safety and security of the platform.</li>
+    <li>Comply with legal obligations.</li>
+  </ul>
+  <p>We do not use your personal data for targeted advertising.</p>
+
+  <h2 class="heading" id="data-share">15. Data Sharing</h2>
+  <p>We do not sell your personal data. We may share data only in the following circumstances:</p>
+  <ul>
+    <li><strong>With other users:</strong> Instructors' public profiles and class listings are visible to students and parents. Student names are visible to their enrolled instructors.</li>
+    <li><strong>Service providers:</strong> We may share data with trusted third-party providers (e.g. cloud hosting, analytics) who process data on our behalf under strict confidentiality agreements.</li>
+    <li><strong>Legal requirements:</strong> We may disclose data if required by law, court order, or to protect the rights and safety of our users.</li>
+    <li><strong>Business transfers:</strong> In the event of a merger or acquisition, data may be transferred to the new entity, with users notified in advance.</li>
+  </ul>
+
+  <h2 class="heading" id="data-retain">16. Data Retention</h2>
+  <p>We retain your personal data for as long as your account is active or as needed to provide services. You may request deletion of your account and associated data at any time. Some data may be retained for a limited period where required by law or for legitimate business purposes (e.g. resolving disputes).</p>
+
+  <h2 class="heading" id="your-rights">17. Your Rights</h2>
+  <p>Depending on your location, you may have the right to:</p>
+  <ul>
+    <li>Access the personal data we hold about you.</li>
+    <li>Request correction of inaccurate data.</li>
+    <li>Request deletion of your data ("right to be forgotten").</li>
+    <li>Object to or restrict certain processing of your data.</li>
+    <li>Data portability — receive your data in a structured, machine-readable format.</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at <a href="mailto:hello@brainyengage.com">hello@brainyengage.com</a>. We will respond within 30 days.</p>
+
+  <h2 class="heading" id="children">18. Children's Privacy</h2>
+  <p>The App is intended solely for users aged 18 and above. We do not knowingly collect personal data from individuals under the age of 18. If we become aware that a person under 18 has created an account or provided personal data, we will promptly suspend the account and delete the associated data.</p>
+  <p>Parents or guardians who believe their child under 18 has created an account should contact us immediately at <a href="mailto:hello@brainyengage.com">hello@brainyengage.com</a>.</p>
+
+  <h2 class="heading" id="security">19. Security</h2>
+  <p>We implement industry-standard technical and organisational measures to protect your personal data against unauthorised access, loss, or misuse. As an early access product, we are continuously working to improve our security practices.</p>
+  <p>If you suspect any unauthorised account activity, please notify us immediately at <a href="mailto:hello@brainyengage.com">hello@brainyengage.com</a>.</p>
+
+  <h2 class="heading" id="changes-privacy">20. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify all users of material changes at least 14 days in advance via the App or email.</p>
+
+  <h2 class="heading" id="contact">21. Contact Us</h2>
+  <p>For questions relating to this Privacy Policy or your personal data:</p>
+  <ul>
+    <li>Email: <a href="mailto:hello@brainyengage.com">hello@brainyengage.com</a></li>
+    <li>Website: <a href="http://www.brainyengage.com" target="_blank">www.brainyengage.com</a></li>
+  </ul>
+
+  <!-- CLOSING STATEMENT -->
+  <div class="highlight" style="margin-top: 40px; font-style: normal; font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 600; color: #374151;">
+    By using the Brainy Engage App — whether as a Class Instructor, Student, or Parent/Guardian — you acknowledge that you have read, understood, and agree to both these Terms and Conditions and this Privacy Policy.
+  </div>
+
+  <!-- CONTACT BOX -->
+  <div class="contact-box">
+    <h3>Questions? We're here to help.</h3>
+    <p>Reach out to us any time at <a href="mailto:hello@brainyengage.com">hello@brainyengage.com</a></p>
+    <p style="margin-top:8px; font-size:0.85rem; color:rgba(255,255,255,0.75);">We typically respond within 1–2 business days.</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Brainy Engage. All rights reserved. &nbsp;·&nbsp; <a href="http://www.brainyengage.com">www.brainyengage.com</a></p>
+  <p style="margin-top:6px;">Effective Date: June 14, 2026 &nbsp;·&nbsp; Last Updated: June 14, 2026</p>
+</footer>
+
+</body>
+</html>
