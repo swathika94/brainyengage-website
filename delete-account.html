@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Delete Your Account — Brainy Engage</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --orange: #F97316;
+    --orange-light: #FFF7ED;
+    --orange-border: #FFD4A8;
+    --orange-dark: #C2440A;
+    --dark: #1a1a1a;
+    --grey: #6b7280;
+    --grey-light: #f5f5f5;
+    --white: #ffffff;
+    --max-width: 780px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: #fafafa;
+    color: var(--dark);
+    line-height: 1.75;
+  }
+
+  .header {
+    background: var(--orange);
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -40px;
+    width: 260px; height: 260px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+  .header-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .brain-icon {
+    width: 48px; height: 48px;
+    background: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    letter-spacing: -0.5px;
+  }
+  .header .subtitle {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.88);
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  .header .dates {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .notice {
+    background: var(--orange-light);
+    border: 1.5px solid var(--orange-border);
+    border-left: 4px solid var(--orange);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 40px;
+  }
+  .notice strong {
+    display: block;
+    color: var(--orange-dark);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .notice p {
+    font-size: 0.92rem;
+    color: var(--orange-dark);
+    line-height: 1.6;
+  }
+
+  .steps-card {
+    background: var(--white);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin: 24px 0 40px;
+  }
+  .steps-card h2 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 16px;
+  }
+  .steps-card ol {
+    padding-left: 22px;
+    margin: 0 0 20px;
+  }
+  .steps-card li {
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+  a.button {
+    display: inline-block;
+    background: var(--orange);
+    color: white;
+    padding: 13px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.95rem;
+  }
+  a.button:hover { background: var(--orange-dark); }
+
+  h2.heading {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin: 36px 0 10px;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.8;
+  }
+
+  ul, ol {
+    padding-left: 22px;
+    margin: 10px 0 16px;
+  }
+  li { margin-bottom: 6px; }
+
+  a { color: var(--orange); font-weight: 600; }
+  a:hover { text-decoration: underline; }
+
+  .contact-box {
+    background: var(--orange);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-top: 48px;
+    text-align: center;
+  }
+  .contact-box h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .contact-box p { color: rgba(255,255,255,0.9); font-size: 0.95rem; }
+  .contact-box a {
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 0.82rem;
+    color: var(--grey);
+    border-top: 1px solid #e5e7eb;
+    background: white;
+  }
+  footer a { color: var(--orange); text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-logo">
+      <div class="brain-icon">🧠</div>
+      <h1>Brainy Engage</h1>
+    </div>
+    <div class="subtitle">Delete Your Account</div>
+    <div class="dates">Effective Date: July 8, 2026</div>
+  </div>
+
+  <div class="container">
+
+    <div class="notice">
+      <strong>Before you begin</strong>
+      <p>Deleting your account is permanent. This will remove your name, email address, gender, account credentials, and booking history from Brainy Engage. This applies to all account holders, including Parents/Guardians and adult Students.</p>
+    </div>
+
+    <div class="steps-card">
+      <h2>How to Request Deletion</h2>
+      <ol>
+        <li>Send an email to <a href="mailto:hello@brainyengage.com?subject=Account%20Deletion%20Request">hello@brainyengage.com</a> from the email address associated with your account.</li>
+        <li>Use the subject line: <strong>"Account Deletion Request"</strong>.</li>
+        <li>Include the full name and email address on your account so we can locate it.</li>
+        <li>We will confirm your identity and process your request within a reasonable timeframe.</li>
+      </ol>
+      <a class="button" href="mailto:hello@brainyengage.com?subject=Account%20Deletion%20Request">Email Us to Delete My Account</a>
+    </div>
+
+    <h2 class="heading">What Gets Deleted</h2>
+    <p>Once your request is verified, we will delete the following data associated with your account:</p>
+    <ul>
+      <li>Your name and email address</li>
+      <li>Your gender (if provided)</li>
+      <li>Your account credentials</li>
+      <li>Your booking and class history</li>
+    </ul>
+
+    <h2 class="heading">What May Be Retained</h2>
+    <p>We may retain limited information where required to comply with legal obligations, resolve disputes, or enforce our agreements, consistent with our <a href="/privacy.html">Privacy Policy</a>. Any such data is retained only as long as necessary and is not used for any other purpose.</p>
+
+    <h2 class="heading">Timeframe</h2>
+    <p>We aim to process deletion requests within 30 days of verification. You will receive a confirmation email once your account and associated data have been deleted.</p>
+
+    <div class="contact-box">
+      <h3>Questions?</h3>
+      <p>Reach us anytime at <a href="mailto:hello@brainyengage.com">hello@brainyengage.com</a>, or review our full <a href="/privacy.html">Privacy Policy</a>.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Brainy Engage. All rights reserved. &nbsp;·&nbsp; <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>
