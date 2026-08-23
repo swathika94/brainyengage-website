@@ -17,9 +17,47 @@
     color:#1a1a1a;
   }
 
+  /* ── SITE NAV ── */
+  .site-nav {
+    position:relative;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 28px;
+    background:#fff;
+    border-bottom:1px solid #f0f0f0;
+  }
+  .site-nav .nav-brand {
+    font-family:'Nunito', sans-serif;
+    font-weight:900;
+    font-size:18px;
+    color:#F97316;
+    text-decoration:none;
+  }
+  .site-nav .nav-links {
+    display:flex;
+    gap:22px;
+  }
+  .site-nav .nav-links a {
+    font-size:13px;
+    font-weight:600;
+    color:#666;
+    text-decoration:none;
+    padding:4px 0;
+    border-bottom:2px solid transparent;
+    transition:color 0.2s, border-color 0.2s;
+  }
+  .site-nav .nav-links a:hover { color:#F97316; }
+  .site-nav .nav-links a.active { color:#F97316; border-color:#F97316; }
+  @media (max-width:480px) {
+    .site-nav { padding:14px 18px; }
+    .site-nav .nav-links { gap:14px; }
+  }
+
   /* ── LAYOUT ── */
   .page {
-    min-height:100vh;
+    min-height:calc(100vh - 57px);
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -226,6 +264,15 @@
 </style>
 </head>
 <body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">Brainy Engage</a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="privacy.html">Terms &amp; Privacy</a>
+  </div>
+</nav>
 
 <div class="page">
   <div class="blob b1"></div>
